@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Perhitungan efisiensi energi untuk rumah pintar</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>911RLS</h1>
+      <p>Asisten super untuk semua masalah cewek di dunia!</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Pilih tipe make up kamu hari ini!
+    </h2>
+    <ul class="list" id="list">
+      <li class="list__item">
+        <a href={{Glossy}}>
+          <img class="item__img" src="../static/img/Makeup.png" alt="Makeup">
+          <span>Korean</span></a>
+      </li>
+      <!--Tugas #2 -->
+      <li class="list__item">
+        <!--link ini akan merujuk kepada http://127/0.0.0:500/size/7-->
+        <a href={{Clean}}> 
+          <img class="item__img" src="../static/img/Makeup.png" alt="Makeup">
+          <span>Japan</span></a>
+      </li>
+      <li class="list__item">
+        <!--link ini akan merujuk kepada http://127/0.0.0:500/size/10-->
+        <a href={{Douyin}}>
+          <img class="item__img" src="../static/img/Make.svg" alt="light">
+          <span>Chinnese</span></a>
+      </li>
+      </li>
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
